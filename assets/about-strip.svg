@@ -1,0 +1,28 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="100" y1="50" x2="1500" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#271941"/>
+      <stop offset="1" stop-color="#110B1F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" rx="30" fill="url(#bg)"/>
+  <text x="90" y="86" fill="#EFE9FF" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700">Built to Scale Reliable EV Infrastructure in India</text>
+
+  <rect x="120" y="138" width="560" height="290" rx="24" fill="#1A112E" stroke="#6A4EB0"/>
+  <path d="M248 220L312 190L376 228L442 180L510 220L548 296L484 336L410 320L340 350L280 312Z" fill="#7F5DE4"/>
+  <circle cx="376" cy="228" r="10" fill="#E8DEFF"/>
+  <circle cx="442" cy="180" r="10" fill="#E8DEFF"/>
+  <circle cx="484" cy="336" r="10" fill="#E8DEFF"/>
+
+  <rect x="740" y="138" width="740" height="290" rx="24" fill="#1A112E" stroke="#6A4EB0"/>
+  <g>
+    <rect x="810" y="196" width="140" height="160" rx="16" fill="#8B67F5"/>
+    <rect x="842" y="228" width="76" height="52" rx="10" fill="#1A1230"/>
+    <circle cx="880" cy="318" r="14" fill="#E8DEFF"/>
+  </g>
+  <g fill="#D4C6FB" font-family="Inter, Arial, sans-serif" font-size="28">
+    <text x="1000" y="230">Mission-led execution</text>
+    <text x="1000" y="280">Support-first operations</text>
+    <text x="1000" y="330">Commercial clarity for partners</text>
+  </g>
+</svg>

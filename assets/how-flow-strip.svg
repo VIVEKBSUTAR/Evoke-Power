@@ -1,0 +1,45 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="100" y1="20" x2="1460" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#281843"/>
+      <stop offset="1" stop-color="#100B1D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" rx="30" fill="url(#bg)"/>
+  <text x="82" y="82" fill="#EEE8FF" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700">Deployment Journey: From Request to Revenue</text>
+
+  <g stroke="#8D6DF7" stroke-width="7" stroke-linecap="round">
+    <path d="M186 280H486"/>
+    <path d="M526 280H826"/>
+    <path d="M866 280H1166"/>
+    <path d="M1206 280H1506"/>
+  </g>
+
+  <g>
+    <circle cx="146" cy="280" r="58" fill="#34225A" stroke="#8F71F7"/>
+    <rect x="122" y="255" width="48" height="50" rx="8" fill="#D9CCFF"/>
+    <text x="80" y="374" fill="#D4C6FB" font-family="Inter, Arial, sans-serif" font-size="22">1. Partner Inquiry</text>
+  </g>
+  <g>
+    <circle cx="486" cy="280" r="58" fill="#34225A" stroke="#8F71F7"/>
+    <path d="M454 286L482 314L518 248" stroke="#D9CCFF" stroke-width="10" stroke-linecap="round"/>
+    <text x="404" y="374" fill="#D4C6FB" font-family="Inter, Arial, sans-serif" font-size="22">2. Site Survey</text>
+  </g>
+  <g>
+    <circle cx="826" cy="280" r="58" fill="#34225A" stroke="#8F71F7"/>
+    <rect x="800" y="248" width="52" height="64" rx="12" fill="#D9CCFF"/>
+    <text x="730" y="374" fill="#D4C6FB" font-family="Inter, Arial, sans-serif" font-size="22">3. Installation</text>
+  </g>
+  <g>
+    <circle cx="1166" cy="280" r="58" fill="#34225A" stroke="#8F71F7"/>
+    <path d="M1138 252H1194V308H1138Z" fill="#D9CCFF"/>
+    <circle cx="1166" cy="280" r="12" fill="#8F71F7"/>
+    <text x="1082" y="374" fill="#D4C6FB" font-family="Inter, Arial, sans-serif" font-size="22">4. Charging Live</text>
+  </g>
+  <g>
+    <circle cx="1506" cy="280" r="58" fill="#34225A" stroke="#8F71F7"/>
+    <path d="M1476 304H1536" stroke="#D9CCFF" stroke-width="8" stroke-linecap="round"/>
+    <path d="M1506 248V312" stroke="#D9CCFF" stroke-width="8" stroke-linecap="round"/>
+    <text x="1440" y="374" fill="#D4C6FB" font-family="Inter, Arial, sans-serif" font-size="22">5. Revenue</text>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="20" x2="1480" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A1A46"/>
+      <stop offset="1" stop-color="#110B1F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" rx="30" fill="url(#bg)"/>
+  <text x="90" y="82" fill="#EFE9FF" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700">Reach EVOKE POWER LLP for Site Assessment and Onboarding</text>
+
+  <rect x="114" y="130" width="1372" height="306" rx="24" fill="#1B1230" stroke="#6D52B8"/>
+
+  <g>
+    <circle cx="312" cy="280" r="74" fill="#7E5CE6"/>
+    <path d="M278 254H346V306H278Z" fill="#E8DEFF"/>
+    <polyline points="278,254 312,284 346,254" fill="none" stroke="#7E5CE6" stroke-width="8"/>
+    <text x="244" y="392" fill="#D5C7FC" font-family="Inter, Arial, sans-serif" font-size="24">Email</text>
+  </g>
+
+  <g>
+    <circle cx="800" cy="280" r="74" fill="#7E5CE6"/>
+    <path d="M784 238C808 238 822 252 822 274C822 292 812 304 796 314L792 322H776L782 310C764 300 754 288 754 270C754 250 770 238 784 238Z" fill="#E8DEFF"/>
+    <text x="736" y="392" fill="#D5C7FC" font-family="Inter, Arial, sans-serif" font-size="24">Phone</text>
+  </g>
+
+  <g>
+    <circle cx="1288" cy="280" r="74" fill="#7E5CE6"/>
+    <path d="M1288 234C1315 234 1338 257 1338 284C1338 321 1288 354 1288 354C1288 354 1238 321 1238 284C1238 257 1261 234 1288 234Z" fill="#E8DEFF"/>
+    <circle cx="1288" cy="284" r="16" fill="#7E5CE6"/>
+    <text x="1232" y="392" fill="#D5C7FC" font-family="Inter, Arial, sans-serif" font-size="24">Location</text>
+  </g>
+</svg>
