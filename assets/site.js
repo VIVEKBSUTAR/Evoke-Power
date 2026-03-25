@@ -21,3 +21,31 @@ document.querySelectorAll('.faq-head').forEach((btn) => {
     if (input) input.value = params.get(key) || '';
   });
 })();
+
+// Scroll Animations
+document.addEventListener('DOMContentLoaded', () => {
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target); // Animate only once
+      }
+    });
+  }, observerOptions);
+
+  // Elements to animate
+  const elementsToAnimate = document.querySelectorAll(
+    'h1, h2, .card, .step, .hero-media, .visual-card, .cta-band, .form-card, .page-media, .hero-card, .visual-caption'
+  );
+
+  elementsToAnimate.forEach(el => {
+    el.classList.add('reveal');
+    observer.observe(el);
+  });
+});
