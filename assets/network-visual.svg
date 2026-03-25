@@ -1,0 +1,18 @@
+<svg width="1400" height="700" viewBox="0 0 1400 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="n1" x1="120" y1="90" x2="1230" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#211534"/>
+      <stop offset="1" stop-color="#3A2372"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="700" rx="24" fill="#130E1D"/>
+  <rect x="100" y="90" width="1200" height="520" rx="22" fill="url(#n1)"/>
+  <circle cx="220" cy="350" r="26" fill="#C9BBF8"/>
+  <circle cx="520" cy="220" r="26" fill="#C9BBF8"/>
+  <circle cx="760" cy="390" r="26" fill="#C9BBF8"/>
+  <circle cx="1040" cy="260" r="26" fill="#C9BBF8"/>
+  <circle cx="1180" cy="450" r="26" fill="#C9BBF8"/>
+  <path d="M220 350L520 220L760 390L1040 260L1180 450" stroke="#9B7EFF" stroke-width="7" stroke-linecap="round"/>
+  <text x="170" y="160" fill="#EEE6FF" font-family="Inter, Arial" font-size="38" font-weight="700">Charging Network Visualization</text>
+  <text x="170" y="205" fill="#CBBEE7" font-family="Inter, Arial" font-size="24">Commercial hubs connected through managed deployment and support</text>
+</svg>

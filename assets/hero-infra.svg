@@ -1,0 +1,27 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A1230"/>
+      <stop offset="1" stop-color="#311B5E"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="330" y1="140" x2="1250" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8E6CFF" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#5D39D6" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1220" cy="130" r="220" fill="#6D47FF" fill-opacity="0.2"/>
+  <circle cx="290" cy="700" r="260" fill="#8E6CFF" fill-opacity="0.16"/>
+  <rect x="170" y="220" width="1260" height="460" rx="28" fill="#1D1533" stroke="#5A448F" stroke-width="2"/>
+  <rect x="240" y="290" width="420" height="280" rx="18" fill="#261C40" stroke="#4B3A73"/>
+  <rect x="720" y="290" width="640" height="72" rx="14" fill="#2A1F46"/>
+  <rect x="720" y="388" width="520" height="52" rx="12" fill="#2A1F46"/>
+  <rect x="720" y="458" width="420" height="52" rx="12" fill="#2A1F46"/>
+  <path d="M352 500H552" stroke="#7C5AF2" stroke-width="12" stroke-linecap="round"/>
+  <path d="M408 430H498" stroke="#A990FF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M448 370V560" stroke="#B89FFF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M285 615C435 690 1150 690 1310 615" stroke="url(#violet)" stroke-width="10" stroke-linecap="round"/>
+  <text x="722" y="338" fill="#E6DBFF" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">EV Infrastructure Control Layer</text>
+  <text x="722" y="423" fill="#C9BCED" font-family="Inter, Arial, sans-serif" font-size="24">Real-time utilization and settlement monitoring</text>
+  <text x="722" y="492" fill="#C9BCED" font-family="Inter, Arial, sans-serif" font-size="24">3.3kW to 480kW deployment readiness</text>
+</svg>
