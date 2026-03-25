@@ -7,10 +7,13 @@
 <div class="form-card">
 <h3>Submit your requirement</h3>
 <p class="mb-14">This is the primary lead form for business and individual inquiries.</p>
-<form id="leadForm" name="evoke-leads" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
-  <input type="hidden" name="form-name" value="evoke-leads">
-  <input type="hidden" name="bot-field">
-  <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_term"><input type="hidden" name="utm_content">
+<form id="leadForm" action="https://api.web3forms.com/submit" method="POST">
+  <!-- Replace with your Access Key -->
+  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+  <input type="hidden" name="subject" value="New Lead from Evoke Power Website">
+  <input type="hidden" name="redirect" value="https://evokepower.in/thank-you.html">
+  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
   <div class="row-2">
     <div class="field"><label for="name">Name</label><input id="name" name="name" required></div>
     <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" pattern="[0-9+\-()\s]{8,20}" required></div>
