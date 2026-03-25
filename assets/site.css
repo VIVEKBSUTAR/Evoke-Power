@@ -425,9 +425,7 @@ input[type=range] { width: 100%; accent-color: var(--accent); }
   overflow: hidden;
   border: 1px solid var(--line);
 }
-@media (max-width: 980px) {
-  .menu-btn { display: inline-flex; color: #f2ecff; border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; background: #201730; }
-}
+
 
 /* --- ANIMATIONS --- */
 
