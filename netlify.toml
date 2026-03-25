@@ -1,0 +1,45 @@
+[build]
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 301
+
+[[redirects]]
+  from = "/terms"
+  to = "/terms.html"
+  status = 301
+
+[[redirects]]
+  from = "/cookies"
+  to = "/cookies.html"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; frame-ancestors 'none'; base-uri 'self'; form-action 'self';"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
