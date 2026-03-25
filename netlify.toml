@@ -15,6 +15,36 @@
   status = 301
 
 [[redirects]]
+  from = "/solutions"
+  to = "/solutions.html"
+  status = 301
+
+[[redirects]]
+  from = "/products"
+  to = "/products.html"
+  status = 301
+
+[[redirects]]
+  from = "/how-it-works"
+  to = "/how-it-works.html"
+  status = 301
+
+[[redirects]]
+  from = "/businesses"
+  to = "/businesses.html"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 301
+
+[[redirects]]
   from = "/terms"
   to = "/terms.html"
   status = 301
@@ -22,6 +52,16 @@
 [[redirects]]
   from = "/cookies"
   to = "/cookies.html"
+  status = 301
+
+[[redirects]]
+  from = "/refund-cancellation"
+  to = "/refund-cancellation.html"
+  status = 301
+
+[[redirects]]
+  from = "/shipping-policy"
+  to = "/shipping-policy.html"
   status = 301
 
 [[headers]]
