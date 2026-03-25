@@ -366,6 +366,27 @@ p { color: var(--muted); margin: 0; }
 }
 
 
+/* Calculator Styles */
+.calc-widget {
+  background: rgba(35, 27, 49, 0.6);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+.calc-result {
+  background: linear-gradient(135deg, rgba(91, 47, 217, 0.2), rgba(143, 105, 255, 0.1));
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+  text-align: center;
+}
+.calc-result span { display: block; font-size: 0.9rem; color: #d8cef2; margin-bottom: 4px; }
+.calc-result strong { display: block; font-size: 1.8rem; color: #fff; line-height: 1; }
+.range-val { text-align: right; font-size: 0.9rem; color: var(--accent); margin-top: 4px; }
+input[type=range] { width: 100%; accent-color: var(--accent); }
+
 /* Contact Page Improvements */
 .contact-info-list {
   display: flex;

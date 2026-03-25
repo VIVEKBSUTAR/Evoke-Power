@@ -10,6 +10,10 @@
   <meta property="og:description" content="Buy, partner, or franchise EV charging stations with EVOKE POWER LLP.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.evokepower.in/">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -46,16 +50,28 @@
           </div>
         </div>
         <div class="hero-card">
+        <div class="hero-card">
           <img src="assets/ev-charging-1.webp" alt="High-power EV charging station installed at a commercial location" class="hero-media">
-          <h3>Business Snapshot</h3>
-          <p>Revenue models include hardware sales, revenue sharing, and transaction fees.</p>
-          <div class="hero-stats">
-            <div class="stat"><strong>Rs 2 / Unit</strong><span>Payment gateway fee</span></div>
-            <div class="stat"><strong>24 Hours</strong><span>Settlement cycle</span></div>
-            <div class="stat"><strong>3.3kW - 480kW</strong><span>Charger range</span></div>
-            <div class="stat"><strong>Mostly Unmanned</strong><span>Station operations</span></div>
+          <div class="calc-widget mt-16">
+            <h3>Revenue Calculator</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Estimate monthly earnings per charger.</p>
+            <div class="field">
+              <label>Daily Sessions (per charger)</label>
+              <input type="range" id="sessions" min="1" max="20" value="5" oninput="updateCalc()">
+              <div class="range-val"><span id="sessionsVal">5</span> cars/day</div>
+            </div>
+            <div class="field">
+              <label>Rate per Unit (₹)</label>
+              <input type="number" id="rate" value="18" min="10" max="30" oninput="updateCalc()">
+            </div>
+            <div class="calc-result">
+              <span style="display:block; font-size: 0.9rem; color: #d8cef2;">Est. Monthly Revenue</span>
+              <strong id="revenueResult" style="display:block; font-size: 1.8rem; color: #fff;">₹81,000</strong>
+            </div>
+            <p style="font-size: 0.75rem; color: var(--muted); margin-top: 8px;">*Based on avg 30kWh per session.</p>
           </div>
         </div>
+
       </div>
     </section>
 

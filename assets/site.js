@@ -22,7 +22,32 @@ document.querySelectorAll('.faq-head').forEach((btn) => {
   });
 })();
 
-// Scroll Animations
+// ROI Calculator
+function updateCalc() {
+  const sessions = document.getElementById('sessions').value;
+  const rate = document.getElementById('rate').value;
+  document.getElementById('sessionsVal').textContent = sessions;
+  
+  // Logic: Sessions * 30kWh (avg) * Rate * 30 days
+  const kwhPerSession = 30; 
+  const monthlyRevenue = sessions * kwhPerSession * rate * 30;
+  
+  // Format as currency
+  const formatter = new Intl.NumberFormat('en-IN', {
+    style: 'currency',
+    currency: 'INR',
+    maximumFractionDigits: 0
+  });
+  
+  const resultEl = document.getElementById('revenueResult');
+  if (resultEl) resultEl.textContent = formatter.format(monthlyRevenue);
+}
+
+// Initial calc
+document.addEventListener('DOMContentLoaded', () => {
+  if(document.getElementById('revenueResult')) updateCalc();
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   const observerOptions = {
     root: null,
