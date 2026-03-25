@@ -5,6 +5,11 @@
   NODE_VERSION = "20"
 
 [[redirects]]
+  from = "/evoke_power_platform.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
   from = "/privacy"
   to = "/privacy.html"
   status = 301

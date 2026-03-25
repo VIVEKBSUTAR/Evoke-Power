@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Turn your parking space into a passive income asset. Install EV charging stations with Evoke Power and earn revenue.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Evoke Power | EV Charging Partner Platform">
+  <meta property="og:description" content="Turn your parking space into a passive income asset with Evoke Power's EV charging partner program.">
+  <meta property="og:url" content="https://www.evokepower.in/">
+  <meta property="og:image" content="https://www.evokepower.in/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Evoke Power | EV Charging Partner Platform">
+  <meta name="twitter:description" content="Partner with Evoke Power to install EV charging stations and earn monthly revenue share.">
+  <meta name="twitter:image" content="https://www.evokepower.in/og-image.jpg">
+  <link rel="canonical" href="https://www.evokepower.in/">
+  <title>Evoke Power | EV Charging Partner Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', { send_page_view: true });
+  </script>
+  <style>
+    :root {
+      --forest: #0d4a2b;
+      --forest-2: #0f5c34;
+      --forest-3: #1a7a46;
+      --green: #22c55e;
+      --green-pale: #dcfce7;
+      --amber: #f59e0b;
+      --amber-2: #fbbf24;
+      --amber-pale: #fef3c7;
+      --cream: #faf7f2;
+      --cream-2: #f3ede3;
+      --dark: #0f1a12;
+      --text: #2d3d30;
+      --muted: #6b7c6e;
+      --border: #dde8dd;
+      --white: #ffffff;
+      --radius: 20px;
+      --radius-sm: 12px;
+      --shadow: 0 4px 24px rgba(13,74,43,0.08);
+      --shadow-lg: 0 16px 56px rgba(13,74,43,0.14);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: auto; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    h1,h2,h3,h4,h5 { font-family: 'Syne', sans-serif; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 4rem); }
+    
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--forest-3); margin-bottom: 1rem;
+    }
+    .section-label::before { content: ''; width: 24px; height: 2px; background: var(--amber); border-radius: 2px; }
+    .section-title {
+      font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 800; color: var(--dark);
+      letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 1.25rem;
+    }
+    .section-sub { font-size: 1.05rem; color: var(--muted); line-height: 1.75; max-width: 600px; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 0.8rem 1.75rem; border-radius: 50px;
+      font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 0.95rem;
+      cursor: pointer; border: none; text-decoration: none;
+      transition: all 0.28s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .btn-primary { background: var(--amber); color: var(--dark); box-shadow: 0 4px 20px rgba(245,158,11,0.35); }
+    .btn-primary:hover { background: var(--amber-2); transform: translateY(-3px); box-shadow: 0 8px 28px rgba(245,158,11,0.45); }
+    .btn-forest { background: var(--forest); color: var(--white); box-shadow: 0 4px 20px rgba(13,74,43,0.3); }
+    .btn-forest:hover { background: var(--forest-2); transform: translateY(-3px); box-shadow: 0 8px 28px rgba(13,74,43,0.4); }
+    .btn-outline { background: transparent; color: var(--forest); border: 2px solid var(--forest); }
+    .btn-outline:hover { background: var(--forest); color: white; transform: translateY(-3px); }
+    .btn-lg { padding: 1rem 2.25rem; font-size: 1.05rem; }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: 72px; padding: 0 clamp(1.25rem, 4vw, 4rem);
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(250,247,242,0.95);
+      -webkit-backdrop-filter: blur(18px);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 20px rgba(13,74,43,0.08);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo-icon {
+      width: 38px; height: 38px; background: var(--forest); border-radius: 11px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .nav-logo-icon svg { width: 20px; height: 20px; fill: var(--amber); }
+    .nav-logo-text { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.2rem; color: var(--dark); }
+    .nav-logo-text span { color: var(--forest-3); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--text); font-weight: 500; font-size: 0.9rem; text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active-link { color: var(--forest); font-weight: 700; }
+    .nav-right { display: flex; gap: 0.75rem; align-items: center; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--dark); border-radius: 2px; transition: all 0.3s; }
+    
+    .mobile-menu {
+      display: none; position: fixed; top: 72px; left: 0; right: 0;
+      background: var(--white); border-bottom: 1px solid var(--border);
+      padding: 1.5rem clamp(1.25rem,4vw,4rem); z-index: 99;
+      flex-direction: column; gap: 1rem; box-shadow: var(--shadow-lg);
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { color: var(--text); font-weight: 500; font-size: 1rem; text-decoration: none; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+
+    .page-view { display: block; flex: 1; padding-top: 0; animation: none; }
+    .page-view.active { display: block; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+    .page-view section { scroll-margin-top: 92px; }
+
+    .hero {
+      min-height: calc(100vh - 72px); padding: 5rem clamp(1.25rem,4vw,4rem);
+      display: flex; align-items: center;
+      background: radial-gradient(ellipse 70% 60% at 80% 30%, rgba(34,197,94,0.12) 0%, transparent 65%),
+                  radial-gradient(ellipse 50% 40% at 5% 90%, rgba(245,158,11,0.1) 0%, transparent 55%),
+                  var(--cream);
+      position: relative; overflow: hidden;
+    }
+    .hero-inner {
+      max-width: 1200px; margin: 0 auto; width: 100%;
+      display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 5rem; align-items: center;
+      position: relative; z-index: 1;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--amber-pale); color: #92400e;
+      border: 1px solid rgba(245,158,11,0.3);
+      padding: 0.45rem 1rem; border-radius: 50px;
+      font-size: 0.82rem; font-weight: 700; margin-bottom: 1.75rem;
+    }
+    .hero h1 {
+      font-size: clamp(2.8rem, 5.5vw, 4.6rem); font-weight: 800;
+      color: var(--dark); letter-spacing: -0.04em; line-height: 1.06;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 .line-accent { display: inline-block; position: relative; color: var(--forest); }
+    .hero-desc {
+      font-size: 1.1rem; color: var(--muted); line-height: 1.75; max-width: 520px;
+      margin-bottom: 2.5rem;
+    }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+    
+    .hero-trust {
+      margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border);
+      max-width: 480px;
+    }
+    .hero-trust p { font-size: 0.85rem; color: var(--muted); font-weight: 600; margin-bottom: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .trust-logos { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--dark); display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .trust-logos span { opacity: 0.8; }
+
+    .hero-visual { position: relative; }
+    .revenue-preview {
+      background: var(--white); border-radius: var(--radius);
+      box-shadow: var(--shadow-lg); padding: 2rem; position: relative; overflow: hidden;
+    }
+    .revenue-preview::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+      background: linear-gradient(90deg, var(--forest), var(--amber));
+    }
+    .rv-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; }
+    .rv-title { font-family: 'Syne',sans-serif; font-weight: 700; font-size: 0.95rem; color: var(--dark); }
+    .rv-amount { font-family: 'Syne', sans-serif; font-size: 3rem; font-weight: 800; color: var(--forest); line-height: 1; margin-bottom: 0.25rem; }
+    .rv-period { font-size: 0.82rem; color: var(--muted); margin-bottom: 1.75rem; }
+    .rv-bars { display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 1.75rem; }
+    .rv-bar-row { display: flex; flex-direction: column; gap: 4px; }
+    .rv-bar-label { display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--muted); }
+    .rv-bar-track { height: 8px; background: var(--cream-2); border-radius: 4px; overflow: hidden; }
+    .rv-bar-fill { height: 100%; border-radius: 4px; }
+    .rv-breakdown { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    .rv-stat { background: var(--cream); border-radius: var(--radius-sm); padding: 0.85rem; }
+    .rv-stat-val { font-family: 'Syne',sans-serif; font-weight: 800; font-size: 1.1rem; color: var(--dark); }
+    .rv-stat-lbl { font-size: 0.72rem; color: var(--muted); margin-top: 2px; }
+
+    .partner-types { padding: 6rem clamp(1.25rem,4vw,4rem); background: var(--cream); }
+    .partner-types .container { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .partner-visual-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .partner-tile {
+      border-radius: var(--radius); padding: 1.75rem;
+      border: 2px solid transparent; position: relative; overflow: hidden;
+      background: var(--white); border-color: var(--border);
+    }
+    .tile-icon { font-size: 2.2rem; margin-bottom: 0.75rem; }
+    .tile-title { font-family: 'Syne',sans-serif; font-weight: 800; font-size: 1rem; margin-bottom: 0.4rem; color: var(--dark); }
+    .tile-sub { font-size: 0.78rem; line-height: 1.5; color: var(--muted); }
+
+    .how-it-works { padding: 5rem clamp(1.25rem,4vw,4rem); background: var(--forest); }
+    .how-it-works .section-label { color: var(--amber); }
+    .how-it-works .section-label::before { background: var(--amber); }
+    .how-it-works .section-title { color: var(--white); }
+    .how-it-works .section-sub { color: rgba(255,255,255,0.7); }
+    .steps-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 2rem; margin-top: 4rem; position: relative; }
+    .steps-row::before {
+      content: ''; position: absolute; top: 32px; left: 12%; right: 12%;
+      height: 2px; background: linear-gradient(90deg, var(--amber), rgba(245,158,11,0.2));
+    }
+    .step-card { text-align: center; position: relative; z-index: 1; }
+    .step-num {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: var(--dark); border: 2px solid rgba(245,158,11,0.3);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Syne',sans-serif; font-weight: 800; font-size: 1.3rem;
+      color: var(--amber); margin: 0 auto 1.5rem;
+    }
+    .step-title { font-family: 'Syne',sans-serif; font-weight: 700; font-size: 1rem; color: white; margin-bottom: 0.6rem; }
+    .step-desc { font-size: 0.875rem; color: rgba(255,255,255,0.7); line-height: 1.65; }
+
+    .calc-section { padding: 5rem clamp(1.25rem,4vw,4rem); background: var(--cream-2); min-height: 100vh; }
+    .calc-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+    .calc-card {
+      background: var(--white); border-radius: var(--radius); padding: 2.5rem;
+      box-shadow: var(--shadow-lg); border: 1px solid var(--border);
+    }
+    .calc-title { font-family: 'Syne',sans-serif; font-size: 1.2rem; font-weight: 800; color: var(--dark); margin-bottom: 1.75rem; }
+    .calc-group { margin-bottom: 1.5rem; }
+    .calc-label {
+      display: flex; justify-content: space-between; align-items: center;
+      font-weight: 600; font-size: 0.85rem; color: var(--dark); margin-bottom: 0.6rem;
+    }
+    .calc-value { background: var(--forest); color: var(--amber); padding: 3px 10px; border-radius: 50px; font-family: 'Syne',sans-serif; font-weight: 800; font-size: 0.85rem; }
+    input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 3px; background: var(--cream-2); outline: none; cursor: pointer; }
+    input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%; background: var(--forest); border: 3px solid var(--amber); cursor: pointer; }
+    input[type=range]::-webkit-slider-runnable-track { background: linear-gradient(90deg, var(--forest) var(--p, 50%), var(--cream-2) 0); border-radius: 3px; }
+    .calc-select { width: 100%; padding: 0.7rem 1rem; border-radius: var(--radius-sm); border: 1.5px solid var(--border); background: var(--cream); font-family: 'DM Sans',sans-serif; font-size: 0.9rem; color: var(--dark); outline: none; }
+    .calc-result { background: var(--forest); border-radius: var(--radius-sm); padding: 1.5rem; text-align: center; margin-top: 0.5rem; }
+    .calc-result-label { font-size: 0.8rem; color: rgba(255,255,255,0.7); margin-bottom: 0.4rem; }
+    .calc-result-amount { font-family: 'Syne',sans-serif; font-size: 2.8rem; font-weight: 800; color: var(--amber); line-height: 1; margin-bottom: 0.25rem; }
+    .calc-result-sub { font-size: 0.78rem; color: rgba(255,255,255,0.6); }
+    .calc-breakdown { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 1rem; }
+    .calc-breakdown-item { background: rgba(255,255,255,0.07); border-radius: 10px; padding: 0.85rem; text-align: center; }
+    .calc-breakdown-val { font-family:'Syne',sans-serif; font-weight: 800; color: white; font-size: 1rem; }
+    .calc-breakdown-lbl { font-size: 0.7rem; color: rgba(255,255,255,0.6); margin-top: 2px; }
+    .calc-disclaimer { margin-top: 1rem; font-size: 0.76rem; color: var(--muted); line-height: 1.55; }
+    
+    .explainer-item { padding: 1.5rem; background: var(--white); border-radius: var(--radius); border: 1px solid var(--border); margin-bottom: 1rem; }
+    .explainer-num { font-family: 'Syne',sans-serif; font-size: 0.75rem; font-weight: 700; color: var(--forest-3); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.6rem; }
+    .explainer-title { font-family: 'Syne',sans-serif; font-size: 1.1rem; font-weight: 800; color: var(--dark); margin-bottom: 0.5rem; }
+    .explainer-desc { font-size: 0.875rem; color: var(--muted); line-height: 1.7; }
+
+    .value-props { padding: 5rem clamp(1.25rem,4vw,4rem); background: var(--cream); }
+    .vp-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; margin-top: 3.5rem; }
+    .vp-card { background: var(--white); border-radius: var(--radius); padding: 2rem; border: 1px solid var(--border); }
+    .vp-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 1.25rem; background: var(--green-pale); }
+    .vp-title { font-family: 'Syne',sans-serif; font-size: 1.05rem; font-weight: 800; color: var(--dark); margin-bottom: 0.6rem; }
+    .vp-desc { font-size: 0.875rem; color: var(--muted); line-height: 1.7; }
+
+    .faq { padding: 5rem clamp(1.25rem,4vw,4rem); background: var(--cream-2); }
+    .faq-list { margin-top: 3rem; display: flex; flex-direction: column; gap: 0.75rem; max-width: 780px; }
+    .faq-item { background: var(--white); border-radius: var(--radius-sm); border: 1px solid var(--border); overflow: hidden; }
+    .faq-q { display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 1.5rem; cursor: pointer; gap: 1rem; font-weight: 600; font-size: 0.95rem; color: var(--dark); }
+    .faq-q svg { flex-shrink: 0; stroke: var(--forest); width: 18px; height: 18px; transition: transform 0.2s; }
+    .faq-item.open .faq-q svg { transform: rotate(45deg); }
+    .faq-a { padding: 0 1.5rem 1.25rem; font-size: 0.875rem; color: var(--muted); line-height: 1.75; display: none; }
+    .faq-item.open .faq-a { display: block; }
+
+    .partner-form-section { padding: 5rem clamp(1.25rem,4vw,4rem); background: var(--cream); }
+    .form-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+    .form-info h2 { font-size: clamp(2rem,4vw,2.8rem); font-weight: 800; color: var(--dark); line-height: 1.12; margin-bottom: 1.25rem; }
+    .form-info p { font-size: 0.95rem; color: var(--muted); line-height: 1.75; margin-bottom: 2rem; }
+    .contact-form { background: var(--white); border-radius: var(--radius); padding: 2.5rem; box-shadow: var(--shadow-lg); border: 1px solid var(--border); }
+    .form-title { font-family: 'Syne',sans-serif; font-size: 1.25rem; font-weight: 800; color: var(--dark); margin-bottom: 0.5rem; }
+    .fg { margin-bottom: 1.1rem; }
+    .fg label { display: block; font-weight: 600; font-size: 0.82rem; color: var(--dark); margin-bottom: 0.45rem; }
+    .fg input, .fg select { width: 100%; padding: 0.8rem 1rem; border: 1.5px solid var(--border); border-radius: var(--radius-sm); background: var(--cream); font-family: 'DM Sans',sans-serif; font-size: 0.9rem; color: var(--dark); outline: none; }
+    .fg input:focus, .fg select:focus { border-color: var(--forest); }
+    .fg textarea { width: 100%; min-height: 100px; resize: vertical; padding: 0.8rem 1rem; border: 1.5px solid var(--border); border-radius: var(--radius-sm); background: var(--cream); font-family: 'DM Sans',sans-serif; font-size: 0.9rem; color: var(--dark); outline: none; }
+    .fg textarea:focus { border-color: var(--forest); }
+    .consent-box { display: flex; align-items: flex-start; gap: 0.65rem; margin: 1rem 0 0.6rem; }
+    .consent-box input { margin-top: 2px; }
+    .consent-box label { margin: 0; font-size: 0.78rem; color: var(--muted); line-height: 1.6; }
+    .consent-box a { color: var(--forest); text-decoration: none; font-weight: 600; }
+    .privacy-note { margin-top: 0.4rem; font-size: 0.74rem; color: var(--muted); line-height: 1.5; }
+    .btn-submit { width: 100%; padding: 0.95rem; background: var(--forest); color: white; border: none; border-radius: 50px; font-family: 'DM Sans',sans-serif; font-weight: 700; font-size: 1rem; cursor: pointer; margin-top: 0.5rem; display: flex; justify-content: center; }
+    .spin { width: 18px; height: 18px; border: 2px solid rgba(255,255,255,0.3); border-top-color: white; border-radius: 50%; animation: spin 0.7s linear infinite; display: none; }
+    .btn-submit.loading .spin { display: block; }
+    .btn-submit.loading .btn-lbl { display: none; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .form-success { text-align: center; padding: 3rem 2rem; display: none; }
+    .form-success.show { display: block; }
+
+    .cta-banner { padding: 5rem clamp(1.25rem,4vw,4rem); background: var(--amber); }
+    .cta-inner { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 3rem; }
+    .cta-text h2 { font-size: clamp(1.8rem,3.5vw,2.4rem); font-weight: 800; color: var(--dark); margin-bottom: 0.5rem; }
+
+    footer { background: var(--dark); padding: 4rem clamp(1.25rem,4vw,4rem) 2rem; margin-top: auto; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .footer-brand p { font-size: 0.875rem; color: rgba(255,255,255,0.5); line-height: 1.7; margin-top: 1rem; max-width: 280px; }
+    .footer-col h4 { font-family: 'Syne',sans-serif; font-size: 0.85rem; font-weight: 700; color: rgba(255,255,255,0.8); margin-bottom: 1.1rem; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
+    .footer-col ul a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.85rem; }
+    .footer-bottom { font-size: 0.78rem; color: rgba(255,255,255,0.4); text-align: center; }
+
+    @media (max-width: 1024px) {
+      .hero-inner, .partner-types .container, .calc-inner, .form-wrapper, .cta-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .vp-grid { grid-template-columns: repeat(2,1fr); }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links, .nav-right { display: none; }
+      .hamburger { display: flex; }
+      .steps-row, .vp-grid, .partner-visual-grid { grid-template-columns: 1fr; }
+      .steps-row::before { display: none; }
+      .footer-top { grid-template-columns: 1fr; }
+      .fg-row { grid-template-columns: 1fr !important; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#home" class="nav-logo">
+    <div class="nav-logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M13 2L4.09 12.69c-.35.42-.53.63-.52.8a.56.56 0 0 0 .19.41C3.89 14 4.16 14 4.71 14H12v8l8.91-10.69c.35-.42.52-.63.52-.8a.56.56 0 0 0-.19-.41C21.11 10 20.84 10 20.29 10H13V2z"/></svg>
+    </div>
+    <span class="nav-logo-text">Evoke <span>Power</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#how-it-works">How It Works</a></li>
+    <li><a href="#calculator">Earn Revenue</a></li>
+    <li><a href="#why-partner">Why Us</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#partner-form" class="btn btn-primary">Become a Partner</a>
+  </div>
+  <button type="button" class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#how-it-works">How It Works</a>
+  <a href="#calculator">Earn Revenue</a>
+  <a href="#why-partner">Why Us</a>
+  <a href="#faq">FAQ</a>
+  <a href="#partner-form" class="btn btn-primary" style="justify-content:center;margin-top:10px;">Become a Partner</a>
+</div>
+
+<main id="app-root" style="padding-top:72px;">
+  
+  <!-- HOME VIEW -->
+  <div id="home" class="page-view active">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">B2B Commercial Infrastructure</div>
+          <h1>Turn your parking into <span class="line-accent">steady yield</span></h1>
+          <p class="hero-desc">
+            Partner with Evoke Power to install EV charging stations at your commercial property. We operate the hardware. You earn a fixed percentage of every transaction.
+          </p>
+          <div class="hero-actions">
+            <a href="#partner-form" class="btn btn-primary btn-lg">Request Assessment</a>
+            <a href="#calculator" class="btn btn-outline btn-lg">Calculate Yield</a>
+          </div>
+          <div class="hero-trust">
+            <p>Trusted by real estate leaders</p>
+            <div class="trust-logos">
+              <span>Embassy Parks</span>
+              <span>Lodha Group</span>
+              <span>DLF Commercial</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="revenue-preview">
+            <div class="rv-header">
+              <div class="rv-title">Yield Dashboard Projection</div>
+            </div>
+            <div class="rv-amount">₹12,600</div>
+            <div class="rv-period">Estimated monthly payout · 3 points</div>
+            <div class="rv-bars">
+              <div class="rv-bar-row">
+                <div class="rv-bar-label"><span>Office hours</span><span>₹8,200</span></div>
+                <div class="rv-bar-track"><div class="rv-bar-fill" style="width:82%;background:var(--forest);"></div></div>
+              </div>
+              <div class="rv-bar-row">
+                <div class="rv-bar-label"><span>After hours</span><span>₹4,400</span></div>
+                <div class="rv-bar-track"><div class="rv-bar-fill" style="width:45%;background:var(--amber);"></div></div>
+              </div>
+            </div>
+            <div class="rv-breakdown">
+              <div class="rv-stat">
+                <div class="rv-stat-val">120</div>
+                <div class="rv-stat-lbl">Sessions/mo</div>
+              </div>
+              <div class="rv-stat">
+                <div class="rv-stat-val">₹1,51,200</div>
+                <div class="rv-stat-lbl">Annual yield</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partner-types">
+      <div class="container">
+        <div class="section-label">Qualified Locations</div>
+        <h2 class="section-title">Built for high-dwell commercial assets</h2>
+        <div class="partner-visual-grid" style="margin-top:2rem;">
+          <div class="partner-tile">
+            <div class="tile-icon">🏢</div>
+            <div class="tile-title">Corporate Campuses</div>
+            <div class="tile-sub">High predictability. Vehicles sit idle for eight to ten hours providing stable daytime charging volume.</div>
+          </div>
+          <div class="partner-tile">
+            <div class="tile-icon">🏘️</div>
+            <div class="tile-title">Residential Towers</div>
+            <div class="tile-sub">Consistent overnight utilization. Captive audience generating steady monthly recurring usage.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- HOW IT WORKS VIEW -->
+  <div id="how-it-works" class="page-view">
+    <section class="how-it-works" style="min-height: calc(100vh - 72px); display: flex; align-items: center;">
+      <div class="container" style="width: 100%;">
+        <div class="section-label">Execution Plan</div>
+        <h2 class="section-title">Deployment mechanics</h2>
+        <p class="section-sub">We handle technical deployment. You provide the footprint.</p>
+        <div class="steps-row">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <div class="step-title">Site Audit</div>
+            <div class="step-desc">We evaluate your power capacity and parking layout to design a compliant installation plan.</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <div class="step-title">Hardware Setup</div>
+            <div class="step-desc">Certified engineers install BIS-compliant wallboxes. Turnaround time is three business days.</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <div class="step-title">Operations</div>
+            <div class="step-desc">We manage software updates, user billing, and hardware maintenance entirely on our end.</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">04</div>
+            <div class="step-title">Monthly Payout</div>
+            <div class="step-desc">Revenue shares are routed automatically to your corporate account on the first of every month.</div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 4rem;">
+          <a href="#partner-form" class="btn btn-primary">Start Site Audit</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- CALCULATOR VIEW -->
+  <div id="calculator" class="page-view">
+    <section class="calc-section">
+      <div class="container">
+        <div class="calc-inner">
+          <div>
+            <div class="section-label">Yield Projections</div>
+            <h2 class="section-title">Calculate your expected returns</h2>
+            <p class="section-sub" style="margin-bottom: 2rem;">Adjust the inputs based on your property profile. These figures reflect actual network averages.</p>
+            
+            <div class="explainer-item">
+              <div class="explainer-num">The Math</div>
+              <div class="explainer-title">Margin breakdown</div>
+              <div class="explainer-desc">End users pay a fixed tariff per kilowatt hour. You earn a percentage of the net margin after grid costs. Volume multiplied by margin equals your yield.</div>
+            </div>
+            <div class="explainer-item">
+              <div class="explainer-num">Capital Models</div>
+              <div class="explainer-title">Who pays for hardware?</div>
+              <div class="explainer-desc">We offer standard co-investment models where costs and revenues are split. Fully-funded models are restricted to locations passing strict volume audits.</div>
+            </div>
+          </div>
+
+          <div class="calc-card">
+            <div class="calc-title">Projection Matrix</div>
+            
+            <div class="calc-group">
+              <div class="calc-label"><span>Charging points</span><div class="calc-value" id="labelPoints">3</div></div>
+              <input type="range" id="rangePoints" min="1" max="10" value="3" title="Charging points" aria-label="Charging points">
+            </div>
+
+            <div class="calc-group">
+              <div class="calc-label"><span>Daily sessions per point</span><div class="calc-value" id="labelSessions">2</div></div>
+              <input type="range" id="rangeSessions" min="1" max="8" value="2" title="Daily sessions per point" aria-label="Daily sessions per point">
+            </div>
+
+            <div class="calc-group">
+              <div class="calc-label"><span>Avg. kWh per session</span><div class="calc-value" id="labelKwh">15</div></div>
+              <input type="range" id="rangeKwh" min="5" max="30" value="15" title="Average kWh per session" aria-label="Average kWh per session">
+            </div>
+
+            <div class="calc-group">
+              <div class="calc-label"><span>Net margin share</span><div class="calc-value" id="labelShare">30%</div></div>
+              <input type="range" id="rangeShare" min="10" max="50" value="30" title="Net margin share" aria-label="Net margin share">
+            </div>
+
+            <div class="calc-result">
+              <div class="calc-result-label">Estimated Monthly Yield</div>
+              <div class="calc-result-amount" id="calcResult">₹0</div>
+              <div class="calc-result-sub" id="calcResultSub">across 0 points</div>
+              <div class="calc-breakdown">
+                <div class="calc-breakdown-item">
+                  <div class="calc-breakdown-val" id="calcAnnual">₹0</div>
+                  <div class="calc-breakdown-lbl">Annual yield</div>
+                </div>
+                <div class="calc-breakdown-item">
+                  <div class="calc-breakdown-val" id="calcSessions">0</div>
+                  <div class="calc-breakdown-lbl">Total monthly sessions</div>
+                </div>
+              </div>
+            </div>
+            <p class="calc-disclaimer">Projection is illustrative and depends on utilization, tariff policy, grid rates, and site-specific constraints. Final commercials are confirmed after technical and financial due diligence.</p>
+            <a href="#partner-form" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 1.5rem;">Lock in these rates</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- WHY US VIEW -->
+  <div id="why-partner" class="page-view">
+    <section class="value-props" style="min-height: calc(100vh - 72px);">
+      <div class="container">
+        <div class="section-label">Vendor Selection</div>
+        <h2 class="section-title">Infrastructure without overhead</h2>
+        <div class="vp-grid">
+          <div class="vp-card">
+            <div class="vp-icon">⚙️</div>
+            <div class="vp-title">Zero Operational Drag</div>
+            <div class="vp-desc">We own the software stack and user billing. Your facility management team will never have to troubleshoot a charger.</div>
+          </div>
+          <div class="vp-card">
+            <div class="vp-icon" style="background:var(--amber-pale)">🛡️</div>
+            <div class="vp-title">Compliance Handled</div>
+            <div class="vp-desc">All hardware carries mandatory BIS certifications. We ensure your installation passes all local safety inspections.</div>
+          </div>
+          <div class="vp-card">
+            <div class="vp-icon">📊</div>
+            <div class="vp-title">Transparent Ledger</div>
+            <div class="vp-desc">Your dashboard shows exact kilowatt hour draw and transaction logs. Auditable records guarantee accurate revenue payouts.</div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 4rem;">
+          <a href="#partner-form" class="btn btn-forest">Connect with our team</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- FAQ VIEW -->
+  <div id="faq" class="page-view">
+    <section class="faq" style="min-height: calc(100vh - 72px);">
+      <div class="container">
+        <div class="section-label">Logistics</div>
+        <h2 class="section-title">Operational details</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-q">Do you cover the capital expenditure?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+            <div class="faq-a">We offer a co-investment model as standard. Fully-funded installations where we bear total CAPEX are strictly reserved for commercial locations that pass our traffic volume audit. We verify your footfall before approving fully-funded terms.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">What are the power requirements?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+            <div class="faq-a">Standard fast AC chargers require dedicated 3-phase power. Our engineering team conducts a load study during the site audit to determine if your current transformer capacity can handle the specific hardware.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Who handles maintenance?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+            <div class="faq-a">We operate the network. If a unit faults, our remote diagnostics flag it. We dispatch technicians to resolve hardware issues within forty eight hours. Your staff is not involved.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">What is the contract duration?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+            <div class="faq-a">Standard agreements run for three years to amortize setup costs. Break clauses are defined clearly in the term sheet based on the investment model chosen.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- CONTACT VIEW -->
+  <div id="partner-form" class="page-view">
+    <section class="partner-form-section" style="min-height: calc(100vh - 72px);">
+      <div class="container">
+        <div class="form-wrapper">
+          <div class="form-info">
+            <div class="section-label">Initiate Contact</div>
+            <h2>Request a commercial audit</h2>
+            <p>Submit your property details. Our engineers review the profile and provide a data backed yield projection.</p>
+          </div>
+
+          <div class="contact-form" id="formContainer">
+            <div class="form-title">Property Details</div>
+            <form id="leadForm" name="evoke-partner-lead" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+              <input type="hidden" name="form-name" value="evoke-partner-lead">
+              <input type="hidden" name="bot-field">
+              <input type="hidden" id="utm_source" name="utm_source">
+              <input type="hidden" id="utm_medium" name="utm_medium">
+              <input type="hidden" id="utm_campaign" name="utm_campaign">
+              <input type="hidden" id="utm_term" name="utm_term">
+              <input type="hidden" id="utm_content" name="utm_content">
+              <div class="fg">
+                <label for="businessName">Corporate Entity Name</label>
+                <input type="text" id="businessName" name="business_name" title="Corporate Entity Name" required>
+              </div>
+              <div class="fg-row" style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+                <div class="fg">
+                  <label for="contactName">Contact Name</label>
+                  <input type="text" id="contactName" name="contact_name" title="Contact Name" required>
+                </div>
+                <div class="fg">
+                  <label for="contactEmail">Work Email</label>
+                  <input type="email" id="contactEmail" name="contact_email" title="Work Email" required>
+                </div>
+              </div>
+              <div class="fg-row" style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+                <div class="fg">
+                  <label for="contactPhone">Work Phone</label>
+                  <input type="tel" id="contactPhone" name="contact_phone" pattern="[0-9+\-()\s]{8,20}" title="Work Phone" required>
+                </div>
+                <div class="fg">
+                  <label for="companyWebsite">Company Website</label>
+                  <input type="url" id="companyWebsite" name="company_website" placeholder="https://">
+                </div>
+              </div>
+              <div class="fg">
+                <label for="assetType">Asset Type</label>
+                <select id="assetType" name="asset_type" title="Asset Type" required>
+                  <option value="">Select classification</option>
+                  <option>Corporate Office Building</option>
+                  <option>Large Residential Complex</option>
+                  <option>Commercial Retail Hub</option>
+                  <option>Hotel or Hospitality Property</option>
+                  <option>Healthcare Campus</option>
+                </select>
+              </div>
+              <div class="fg-row" style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+                <div class="fg">
+                  <label for="city">City</label>
+                  <input type="text" id="city" name="city" title="City" required>
+                </div>
+                <div class="fg">
+                  <label for="parkingSlots">Total Parking Slots</label>
+                  <input type="number" id="parkingSlots" name="parking_slots" min="1" title="Total Parking Slots" required>
+                </div>
+              </div>
+              <div class="fg-row" style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+                <div class="fg">
+                  <label for="powerCapacity">Available 3-Phase Power (kW)</label>
+                  <input type="number" id="powerCapacity" name="available_power_kw" min="0" title="Available 3-Phase Power">
+                </div>
+                <div class="fg">
+                  <label for="timeline">Preferred Go-Live Timeline</label>
+                  <select id="timeline" name="timeline" title="Preferred Go-Live Timeline" required>
+                    <option value="">Select timeline</option>
+                    <option>Within 30 days</option>
+                    <option>1 to 3 months</option>
+                    <option>3 to 6 months</option>
+                    <option>6+ months</option>
+                  </select>
+                </div>
+              </div>
+              <div class="fg">
+                <label for="footfall">Expected Daily Vehicle Footfall</label>
+                <input type="number" id="footfall" name="daily_vehicle_footfall" min="0" title="Expected Daily Vehicle Footfall">
+              </div>
+              <div class="fg">
+                <label for="commercialModel">Commercial Preference</label>
+                <select id="commercialModel" name="commercial_preference" title="Commercial Preference" required>
+                  <option value="">Select preference</option>
+                  <option>Revenue share with co-investment</option>
+                  <option>Fully funded by Evoke (if qualified)</option>
+                  <option>Need recommendation</option>
+                </select>
+              </div>
+              <div class="fg">
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes" placeholder="Tell us about access hours, visitor mix, power constraints, or internal approval process."></textarea>
+              </div>
+              <div class="consent-box">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I consent to Evoke Power collecting and processing this business data to contact me about EV charging partnership opportunities. I agree to the <a href="privacy.html">Privacy Policy</a>, <a href="terms.html">Terms</a>, and <a href="cookies.html">Cookie Policy</a>.</label>
+              </div>
+              <div class="privacy-note">By submitting, you authorize our team to reach out via email or phone regarding feasibility assessment and commercials.</div>
+              <button type="submit" class="btn-submit" id="submitBtn">
+                <span class="btn-lbl">Submit Profile</span>
+                <div class="spin"></div>
+              </button>
+            </form>
+            <div class="form-success" id="formSuccess">
+              <h3 style="font-family:'Syne',sans-serif;font-size:1.4rem;color:var(--dark);margin-bottom:0.5rem;">Profile Logged</h3>
+              <p style="font-size:0.9rem;color:var(--muted);">Our engineering team will contact you shortly to schedule the feasibility audit.</p>
+              <a href="#home" class="btn btn-outline" style="margin-top:1.5rem;">Return Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="nav-logo-text" style="color:white;">Evoke <span style="color:var(--amber);">Power</span></span>
+        <p>B2B EV Infrastructure and Yield Management.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#how-it-works">Execution</a></li>
+          <li><a href="#calculator">Yield Metrics</a></li>
+          <li><a href="#why-partner">Value</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Corporate</h4>
+        <ul>
+          <li><a href="#why-partner">About</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:partners@evokepower.in">partners@evokepower.in</a></li>
+          <li><a href="#partner-form">Pune, India</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Evoke Power. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function trackEvent(eventName, payload) {
+    if (typeof gtag === 'function') {
+      gtag('event', eventName, payload || {});
+    }
+  }
+
+  // Track CTA clicks and close mobile menu after anchor navigation.
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function() {
+      const href = this.getAttribute('href') || '';
+      const targetId = href.replace('#', '');
+      if (this.classList.contains('btn') || this.classList.contains('btn-submit')) {
+        trackEvent('cta_click', {
+          link_target: targetId,
+          link_text: (this.textContent || '').trim()
+        });
+      }
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (mobileMenu) mobileMenu.classList.remove('open');
+    });
+  });
+
+  // Mobile Menu
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  });
+
+  // Calculator Logic
+  function updateCalc() {
+    const points = parseInt(document.getElementById('rangePoints').value);
+    const sessions = parseInt(document.getElementById('rangeSessions').value);
+    const kwh = parseInt(document.getElementById('rangeKwh').value);
+    const share = parseInt(document.getElementById('rangeShare').value);
+
+    document.getElementById('labelPoints').textContent = points;
+    document.getElementById('labelSessions').textContent = sessions;
+    document.getElementById('labelKwh').textContent = kwh + ' kWh';
+    document.getElementById('labelShare').textContent = share + '%';
+
+    ['rangePoints','rangeSessions','rangeKwh','rangeShare'].forEach(id => {
+      const el = document.getElementById(id);
+      const pct = ((el.value - el.min) / (el.max - el.min)) * 100;
+      el.style.setProperty('--p', pct + '%');
+    });
+
+    // Realistic margin calculation: assume 4 INR net margin per kWh
+    const marginPerKwh = 4; 
+    const monthlyTotalNet = points * sessions * 30 * kwh * marginPerKwh;
+    const partnerYield = Math.round(monthlyTotalNet * (share / 100));
+    const annualYield = partnerYield * 12;
+    const monthlySessions = points * sessions * 30;
+
+    document.getElementById('calcResult').textContent = '₹' + partnerYield.toLocaleString('en-IN');
+    document.getElementById('calcResultSub').textContent = `across ${points} points`;
+    document.getElementById('calcAnnual').textContent = '₹' + annualYield.toLocaleString('en-IN');
+    document.getElementById('calcSessions').textContent = monthlySessions.toLocaleString('en-IN');
+
+    trackEvent('calculator_interaction', {
+      points: points,
+      sessions_per_point: sessions,
+      kwh_per_session: kwh,
+      margin_share: share
+    });
+  }
+
+  ['rangePoints','rangeSessions','rangeKwh','rangeShare'].forEach(id => {
+    document.getElementById(id).addEventListener('input', updateCalc);
+  });
+  updateCalc();
+
+  // FAQ Accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  // Capture and store UTM parameters for attribution.
+  (function populateUtmFields() {
+    const params = new URLSearchParams(window.location.search);
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(key => {
+      const value = params.get(key) || '';
+      const target = document.getElementById(key);
+      if (target) target.value = value;
+    });
+  })();
+
+  // Track form start once when user interacts with any field.
+  const leadForm = document.getElementById('leadForm');
+  let formStarted = false;
+  if (leadForm) {
+    leadForm.addEventListener('focusin', () => {
+      if (!formStarted) {
+        trackEvent('form_start', { form_name: 'evoke-partner-lead' });
+        formStarted = true;
+      }
+    });
+  }
+
+  // Form Submission
+  document.getElementById('leadForm').addEventListener('submit', () => {
+    const btn = document.getElementById('submitBtn');
+    btn.classList.add('loading');
+    btn.disabled = true;
+
+    trackEvent('form_submit', { form_name: 'evoke-partner-lead' });
+  });
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Evoke Power",
+  "url": "https://www.evokepower.in/",
+  "logo": "https://www.evokepower.in/logo.png",
+  "email": "partners@evokepower.in",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pune",
+    "addressCountry": "IN"
+  },
+  "sameAs": []
+}
+</script>
+</body>
+</html>
